@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Happy Hour{% endblock %}
+
+{% block content %}
+    <div id="header">
+
+      <img id="logo" src="{{ url_for('static', filename= 'hhlogo.png') }}" alt="happy hour cocktail finder">
+      <!-- <h1>Welcome!</h1> -->
+      <br>
+      <em>Personalised Cocktail Recipe Finder</em>
+
+    </div>
+
+    <form class="" action="/confirm" method="post">
+
+      <div id="menu">
+        <h1>Alcohols</h1>
+
+        <div>
+          <h2>Select Alcohol Type(s)</h2>
+          <ul class="menu-items">
+            {% for ingredient in ingredients %}
+            <br>
+              <li><input type="checkbox"><span>{{ ingredient[1] }}</span></li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div id="order-details">
+          <input type="submit" value="Submit" class="btn-continue"/>
+        </div>
+
+      </div>
+
+    </form>
+
+
+{% endblock %}
