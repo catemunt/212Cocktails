@@ -58,19 +58,14 @@ def order():
 
 @app.route('/confirm', methods=['POST'])
 def confirm():
-    details = {}
     items = {}
 
     for input in request.form:
-        if input == 'name' or input == 'address':
-            details[input] = request.form[input]
-        elif request.form[input] and request.form[input] != 0:
+        if request.form[input] and request.form[input] != 0:
             items[input] = request.form[input]
 
-    print(details)
     print(items)
 
 
     return render_template('confirm.html',
-                            details = details,
                             items = items)

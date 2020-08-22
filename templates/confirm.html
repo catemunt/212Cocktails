@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}Confirm Order - 212 Burgers{% endblock %}
+{% block title %}Confirm Order - Happy Hour{% endblock %}
 
 {% block head %}
   {{ super() }}
   <style>
     body{
-      background-color: #DFE;
+      background-color: #F5F3F5;
     }
   </style>
 {% endblock %}
@@ -19,23 +19,16 @@
 
   <div  class="center-text">
 
-
-    <div>
-      <h3>Details</h3>
-      {% for key in details %}
-        <p><strong>{{ key }}:</strong> {{ details[key] }}</p>
-      {% endfor %}
-    </div>
-
     <div>
       <h3>Items</h3>
       {% for item in items %}
-        {{ items[item] }} &times; {{item}} <br />
+        <!-- {{ items[item] }} &times;  -->
+        {{item}} <br />
       {% endfor %}
     </div>
 
     <p>
-      <a class="btn-yellow" href="/">home page</a>
+      <a class="btn-continue" href="/">Home Page</a>
     </p>
   </div>
 {% endblock %}

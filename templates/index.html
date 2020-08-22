@@ -12,7 +12,7 @@
 
     </div>
 
-    <form class="" action="/confirm" method="post">
+    <form action="/confirm" method="post">
 
       <div id="menu">
         <h1>Alcohols</h1>
@@ -22,7 +22,7 @@
           <ul class="menu-items">
             {% for ingredient in ingredients %}
             <br>
-              <li><input type="checkbox"><span>{{ ingredient[1] }}</span></li>
+              <li><input type="checkbox" name="{{ ingredient[1] }}"><span>{{ ingredient[1] }}</span></li>
             {% endfor %}
           </ul>
         </div>
