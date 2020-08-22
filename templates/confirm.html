@@ -13,25 +13,25 @@
 
 {% block content %}
   <div id="header">
-    <h1>Confirm</h1>
-    <p>ORDER CONFIRMATION</p>
+    <h1>Your Cocktails</h1>
+    <!-- <p>ORDER CONFIRMATION</p> -->
   </div>
 
   <div  class="center-text">
 
-    <div>
+    <!-- <div>
       <h3>Items</h3>
       {% for item in items %}
         {{item}} <br />
       {% endfor %}
-    </div>
-      <h3>Print</h3>
+    </div> -->
+
+    <div>
+      <h3>Cocktails</h3>
       {% for record in records %}
-        {{record[0]}} <br />
+        <!-- {{record[0]}} <br /> -->
         <img  id="cocktailimage" src="/static/{{ record[1] }}"> <br />
       {% endfor %}
-    <div>
-
     </div>
 
     <p>
