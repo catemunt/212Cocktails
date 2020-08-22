@@ -20,9 +20,9 @@
         <div>
           <h2>Select Alcohol Type(s)</h2>
           <ul class="menu-items">
-            {% for ingredient in ingredients %}
+            {% for alc in ingredients %}
             <br>
-              <li><input type="checkbox" name="{{ ingredient[1] }}"><span>{{ ingredient[1] }}</span></li>
+              <li><input type="checkbox" name="{{ alc[0] }}"><span>{{ alc[1] }}</span></li>
             {% endfor %}
           </ul>
         </div>

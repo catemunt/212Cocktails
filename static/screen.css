@@ -44,6 +44,10 @@
   text-align: center;
 }
 
+#cocktailimage {
+  max-width: 20%;
+}
+
 
 /* descendant selectors */
 
