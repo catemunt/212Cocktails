@@ -1,6 +1,4 @@
 /* google font import */
-@import url('https://fonts.googleapis.com/css?family=Monda');
-@import url('https://fonts.googleapis.com/css?family=Yellowtail');
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
@@ -71,12 +69,6 @@
 #menu li {
   /* margin-top: 0.4em; */
   width: 100%;
-}
-
-#menu .price {
-  float: right;
-  padding-right: 1em;
-  padding-bottom: 1em;
 }
 
 .menu-items {
@@ -178,23 +170,14 @@ a {
 /* forms */
 
 input, textarea {
-  /* border: solid 2px #5DB; */
-  /* border-radius: 3px;
-  color: #2A8; */
   font-family: 'Work Sans', sans-serif;
   font-size: 0.8em;
   height: 2em;
   padding: 0 0.5em;
 }
 
-textarea {
-  height: auto;
-  width: 100%;
-}
 
 #menu input, #menu textarea {
-  /* float: left;
-  margin-right: 1em; */
   margin-top: -0.15em;
   width: 2.2em;
 }
@@ -208,13 +191,8 @@ textarea {
 
 #order-details input,
 #order-details textarea {
-  /* box-sizing: border-box; */
   min-height: 3em;
   width: 50%;
-}
-
-#login {
-  text-align: center;
 }
 
 input[type="number"] {
