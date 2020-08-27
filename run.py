@@ -40,7 +40,7 @@ def confirm():
 
     if alcohols == '':
         print('no selection')
-        return redirect(url_for('index')) #render_template('login.html')
+        return redirect(url_for('index')) 
 
     else:
         con = sqlite3.connect(MENUDB)
